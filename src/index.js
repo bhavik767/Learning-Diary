@@ -1,15 +1,12 @@
-import React from "react";
-import  ReactDOM  from "react-dom";
-import "./index.css";
-import Activity from "./activity";
-
-
-var destination = document.querySelector("#container");
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
-    <div>
-       <Activity/>
-    </div>,
-    destination
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.getElementById('root')
 );
