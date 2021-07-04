@@ -154,32 +154,18 @@ class Column extends Component {
               </div>
             </form>
 
-            {currentColumn.published ? (
-              <button
-                className="badge badge-primary mr-2"
-                onClick={() => this.updateStatus(false)}
-              >
-                UnPublish
-              </button>
-            ) : (
-              <button
-                className="badge badge-primary mr-2"
-                onClick={() => this.updateStatus(true)}
-              >
-                Publish
-              </button>
-            )}
-
             <button
-              className="badge badge-danger mr-2"
+              style={{ margin:"5px" }} 
+              className="btn-sm btn-danger"
               onClick={this.removeColumn}
             >
               Delete
             </button>
 
             <button
+              style={{ margin:"5px" }} 
               type="submit"
-              className="badge badge-success"
+              className="btn-sm btn-success"
               onClick={this.updateContent}
             >
               Update

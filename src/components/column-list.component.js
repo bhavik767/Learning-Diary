@@ -139,7 +139,8 @@ class ColumnsList extends Component {
               </div>
               <Link
                 to={"/columns/" + currentColumn.id}
-                className="badge badge-warning"
+                className="btn-sm btn-success"
+                style={{color : "yellow"}}
               >
                 Edit
               </Link>
