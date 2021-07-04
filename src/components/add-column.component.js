@@ -101,7 +101,7 @@ class AddColumn extends Component {
                 name="description"
               />
             </div>
-
+            <br></br>
             <button onClick={this.saveColumn} className="btn btn-success">
               Submit
             </button>
